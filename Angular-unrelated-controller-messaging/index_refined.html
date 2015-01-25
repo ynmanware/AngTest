@@ -1,0 +1,21 @@
+<script src="https://code.angularjs.org/1.3.4/angular.js"></script>
+<script type="text/javascript" src="js/refined/app.js"></script>
+<div ng-app="myApp">
+    <div ng-controller="Controller1 as ctrl">
+        </br> 
+        <table>
+        	<tr>
+        		<td><B> Enter Description in Controller1</B></td>
+        		<td><input type="text" ng-model="ctrl.description"></select></td>
+        	</tr>
+        </table>
+    </div>
+    <div ng-controller="Controller2 as ctrl">
+        <table>
+        	<tr>
+        		<td><B> Description in controller2</B></td>
+        		<td>{{ctrl.description}}</td>
+        	</tr>
+        </table>
+    </div>
+</div>
