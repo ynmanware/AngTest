@@ -1,0 +1,12 @@
+<script src="https://code.angularjs.org/1.3.1/angular.js"></script>
+<script type="text/javascript" src="js/app1.js"></script>
+<div ng-app="myApp">
+    <div ng-controller="badCtrl">
+        <input placeholder="Type your name" ng-model="name"/>
+        <button ng-click="greetMe()" ng-disabled="notValid()">Greet Me!</button>
+    </div>
+    <div ng-controller="goodCtrl as ctrl">
+        <input placeholder="Type your name" ng-model="ctrl.name"/>
+        <button ng-click="ctrl.greetMe()" ng-disabled="ctrl.notValid()">Greet Me!</button>
+    </div>
+</div>
