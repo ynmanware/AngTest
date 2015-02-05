@@ -32,8 +32,12 @@ index_refined.html - open it to run the example
 refined/app.js - contain all js code for this option
 Here service.description is being between two controllers.  In Controller1, the property is editable.
 Controller2 just reads it.
+exp2 is one more example or similar kind.
 
 
 <B>Note: </B>There are different opproaches for comminication between parent controller and directives.
 
+
 http://plnkr.co/edit/den1mfMeIAWezLTuVZVX?p=preview
+
+<h5>5. exp3 is a simple example of using a service for data sharing along with scope.

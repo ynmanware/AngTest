@@ -1,9 +1,8 @@
 (function(app) {
 
     function SharedService() {
-        var description = "Master";
+        this.description = "Master";
     }
-
     angular.extend(SharedService.prototype, {
         getDescription: function() {
             return this.description;
