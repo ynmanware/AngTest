@@ -35,5 +35,3 @@ Controller2 just reads it.
 
 
 <B>Note: </B>There are different opproaches for comminication between parent controller and directives.
-
-http://plnkr.co/edit/den1mfMeIAWezLTuVZVX?p=preview
