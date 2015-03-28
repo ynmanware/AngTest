@@ -1,0 +1,36 @@
+<div>
+	<table>
+		<tr>
+			<td><label>Data</label></td>
+			<td><select ng-model="dataSelected"
+				ng-change="dataChangedLocal(dataSelected)"
+				ng-options="dataItem.fullId as dataItem.name for dataItem in data">
+			</select></td>
+			<!-- 
+			<td><select ng-model="dataSelected"
+				ng-change="dataChanged({'dataIdSelected': dataSelected})"
+				ng-options="dataItem.fullId as dataItem.name for dataItem in data">
+			</select></td>
+			 -->
+		</tr>
+		<tr>
+			<select ng-model="selectedItems" multiple="multiple"
+				style="height: 200px; width: 250px;"
+				ng-change="selectedItemsChangedDir()"
+				ng-options="item.id as item.name group by item.model for item in items | orderBy:'name'">
+				<option>--</option>
+			</select>
+		</tr>
+
+
+		<!-- <tr>
+			<td><label for="parameterDefinitionPathInput">Path</label></td>
+			<td><div aid="parameterDefinitionPathInput" sd-auto-complete
+					sda-matches="pmCtrl.matchData" sda-match-str="pmCtrl.matchVal"
+					sda-change="pmCtrl.getMatches(pmCtrl.matchVal)"
+					sda-text-property="name" sda-container-class="sd-ac-container"
+					sda-item-hot-class="sd-ac-item-isActive"
+					sda-selected-matches="pmCtrl.dataSelected"></div></td>
+		</tr> -->
+	</table>
+</div>

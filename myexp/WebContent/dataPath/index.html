@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+<meta charset="utf-8" />
+<title>AngularJS Plunker</title>
+<script src="../jquery-1.7.2.js"></script>
+<script src="../angular.js"></script>
+<script src="sdAutoComplete.js"></script>
+<script src="dataPath.js"></script>
+<script src="app.js"></script>
+
+</head>
+
+<body ng-controller="MainCtrl">
+	<div>
+		<sd-data-path sda-data-items="dataItems"
+			sda-data-selected="dataIdSelected"
+			sda-data-path-selected="dataPathSelected"
+			sda-data-changed="dataChanged(dataSelected)"
+			sda-data-path-changed="dataPathChanged(dataPath)"> </sd-data-path>
+	</div>
+</body>
+
+</html>

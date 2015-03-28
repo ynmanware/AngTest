@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+<meta charset="utf-8" />
+<title>AngularJS Plunker</title>
+<script src="../angular.js"></script>
+<script src="dataPath.js"></script>
+<script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+	<div>
+		<sd-data-path data="data" dataSelected="dataIdSelected"
+			data-path-select="dataPathSelected"
+			data-changed="dataChanged(dataIdSelected)"
+			dataPathChanged="dataPathChanged(dataPath)"> </sd-data-path>
+
+		<p>Directive Content</p>
+		<sd-items-filter selected-items="selectedItems"
+			selected-items-changed="selectedItemsChanged(selectedItems)"
+			items="items"> </sd-items-filter>
+
+
+		<P style="color: red">Selected Items (in parent controller) set
+			to: {{selectedItemsReturnedFromDirective}}</p>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<div>
+	<table>
+		<tr>
+			<td><label>Data</label></td>
+			<td><select ng-model="sdaDataSelected" aid="dataSelect"
+				ng-change="dataPathCtrl.dataChanged(sdaDataSelected)"
+				ng-options="dataItem.fullId as dataItem.name for dataItem in sdaDataItems">
+			</select></td>
+		</tr>
+		<tr>
+			<td><label>Path</label></td>
+			<td><div aid="dataPathInput" sd-auto-complete
+					sda-matches="dataPathCtrl.filteredDataPaths"
+					sda-match-str="dataPathCtrl.matchVal"
+					sda-change="dataPathCtrl.getMatches(dataPathCtrl.matchVal)"
+					sda-text-property="name" sda-container-class="sd-ac-container"
+					sda-item-hot-class="sd-ac-item-isActive"
+					sda-allow-duplicates="false"
+					sda-selected-matches="dataPathCtrl.dataSelected"></div></td>
+		</tr>
+	</table>
+</div>

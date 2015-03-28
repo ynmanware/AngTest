@@ -1,0 +1,20 @@
+<div class="toolBar">
+	<table>
+		<tr>
+			<td><input type="image" aid="addMapping" src="add.png"
+				title="{{addLabel}}" alt="add" class="toolbarButton" ng-click="addItem()" /></td>
+			<td><img ng-src="toolbar-separator.png"></img></td>
+			<td><input type="image" aid="deleteMapping" src="delete.png"
+				title="delete" alt="delete" class="toolbarButton"
+				ng-click="deleteItem()" /></td>
+			<td><img ng-src="toolbar-separator.png"></img></td>
+			<td ng-if="showSort"><input type="image" aid="addMapping"
+				src="arrow_up.png" title="add" alt="add" class="toolbarButton"
+				ng-click="sortAsc()" /></td>
+			<td><img ng-src="toolbar-separator.png"></img></td>
+			<td ng-if="showSort"><input type="image" aid="deleteMapping"
+				src="arrow_down.png" title="delete" alt="delete"
+				class="toolbarButton" ng-click="sortDesc()" /></td>
+		</tr>
+	</table>
+</div>
